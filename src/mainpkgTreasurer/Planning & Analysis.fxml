@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane id="AnchorPane" prefHeight="495.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkgTreasurer.PlanningAndAnalysisController">
+   <children>
+      <Label fx:id="budgetctg" layoutX="376.0" layoutY="41.0" text="Budget categories" />
+      <ComboBox fx:id="budgetctg" layoutX="510.0" layoutY="36.0" prefWidth="150.0" />
+      <Label fx:id="budgetamount" layoutX="376.0" layoutY="93.0" text="Budget amounts" />
+      <TextField fx:id="budgetamounttf" layoutX="504.0" layoutY="88.0" prefHeight="31.0" prefWidth="162.0" />
+      <Button alignment="CENTER" layoutX="406.0" layoutY="132.0" mnemonicParsing="false" onAction="#savebuttononmouseclicck" prefHeight="60.0" prefWidth="231.0" text="Save Budget" textAlignment="CENTER" />
+      <Button alignment="CENTER" layoutX="406.0" layoutY="218.0" mnemonicParsing="false" onAction="#generatereportbuttononmouseclick" prefHeight="60.0" prefWidth="231.0" text="Generate Budget Report" textAlignment="CENTER" wrapText="true" />
+      <Label fx:id="budget" layoutX="40.0" layoutY="41.0" text="Budget Name" />
+      <TextField fx:id="budgettf" layoutX="149.0" layoutY="36.0" prefHeight="31.0" prefWidth="162.0" />
+      <Label fx:id="status" layoutX="40.0" layoutY="78.0" text="Status" />
+      <TextField fx:id="statustf" layoutX="149.0" layoutY="73.0" prefHeight="31.0" prefWidth="162.0" />
+      <Label fx:id="period" layoutX="40.0" layoutY="122.0" text="Period" />
+      <TextField fx:id="periodtf" layoutX="149.0" layoutY="117.0" prefHeight="31.0" prefWidth="162.0" />
+      <TableView fx:id="tvbudget" layoutX="35.0" layoutY="227.0" prefHeight="200.0" prefWidth="241.0">
+         <columns>
+            <TableColumn fx:id="tvclmbudget" prefWidth="107.0" text="Budget Name" />
+            <TableColumn fx:id="tvclmperiod" prefWidth="60.0" text="Period" />
+            <TableColumn fx:id="tvclmstatus" prefWidth="75.0" text="Status" />
+         </columns>
+      </TableView>
+      <Button layoutX="40.0" layoutY="162.0" mnemonicParsing="false" onAction="#createbuttononmouseclick" text="Create Budget" />
+      <Button layoutX="178.0" layoutY="162.0" mnemonicParsing="false" onAction="#editbuttononmouseclick" prefHeight="21.0" prefWidth="110.0" text="Edit Budget" />
+      <Line endX="2.0" endY="409.0" layoutX="354.0" layoutY="22.0" startX="2.0" />
+   </children>
+</AnchorPane>
