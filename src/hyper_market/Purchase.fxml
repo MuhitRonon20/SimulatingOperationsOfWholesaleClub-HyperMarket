@@ -59,5 +59,6 @@
             <TableColumn fx:id="amountTabCol" prefWidth="207.0" text="Amount" />
         </columns>
       </TableView>
+      <Button layoutX="859.0" layoutY="708.0" mnemonicParsing="false" onAction="#backOnMouseClicked" text="Back" />
    </children>
 </AnchorPane>

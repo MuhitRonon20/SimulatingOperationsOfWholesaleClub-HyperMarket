@@ -28,11 +28,12 @@
    <bottom>
       <AnchorPane prefHeight="572.0" prefWidth="1122.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="buyProductButton" layoutX="432.0" layoutY="54.0" mnemonicParsing="false" onAction="#buyProductOnMouseClicked" prefHeight="25.0" prefWidth="258.0" text="Buy Product" />
+            <Button fx:id="buyProductButton" layoutX="432.0" layoutY="54.0" mnemonicParsing="false" onAction="#purchaseOnMouseClicked" prefHeight="25.0" prefWidth="258.0" text="Purchase" />
             <Button fx:id="getMembershipButton" layoutX="430.0" layoutY="105.0" mnemonicParsing="false" onAction="#getMembershipOnMouseClicked" prefHeight="25.0" prefWidth="257.0" text="Get MemberShip" />
             <Button fx:id="feedbackaAndReviewButton" layoutX="431.0" layoutY="160.0" mnemonicParsing="false" onAction="#feedbackAndReviewOnMouseClicked" prefHeight="25.0" prefWidth="255.0" text="Feedback And Review" />
             <Button fx:id="customerSupportButton" layoutX="431.0" layoutY="273.0" mnemonicParsing="false" onAction="#customerSupportOnMouseClicked" prefHeight="25.0" prefWidth="255.0" text="Customer Support" />
             <Button fx:id="returnsAndExchangesButton" layoutX="434.0" layoutY="218.0" mnemonicParsing="false" onAction="#returnsAndExchangesOnMouseClicked" prefHeight="25.0" prefWidth="255.0" text="Returns and Exchanges" />
+            <Button fx:id="customerSupportButton1" layoutX="431.0" layoutY="319.0" mnemonicParsing="false" onAction="#orderAndPaymentOptionOnMouseClicked" prefHeight="25.0" prefWidth="255.0" text="Order and Payment Option" />
          </children>
       </AnchorPane>
    </bottom>
