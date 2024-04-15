@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="503.0" prefWidth="462.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventory_manager.AdjustInventoryController">
+   <children>
+      <Label layoutX="83.0" layoutY="35.0" text="select the inventory item" />
+      <ComboBox fx:id="inventoryItemComboBox" layoutX="244.0" layoutY="31.0" onAction="#inventoryItemOnMouseClicked" prefWidth="150.0" />
+      <Label layoutX="83.0" layoutY="78.0" text="Enter the adjustment quantity" />
+      <TextField layoutX="245.0" layoutY="74.0" />
+      <RadioButton fx:id="addRadioButton" layoutX="250.0" layoutY="113.0" mnemonicParsing="false" onAction="#addOnMouseClicked" text="Add" />
+      <RadioButton fx:id="subtractRadioButton" layoutX="324.0" layoutY="113.0" mnemonicParsing="false" onAction="#substractOnMouseClicked" text="Substract" />
+      <Button fx:id="saveAdjustmentButton" layoutX="87.0" layoutY="156.0" mnemonicParsing="false" onAction="#saveAdjustmentOnMouseClicked" prefHeight="25.0" prefWidth="150.0" text="Save Adjustment" />
+      <Button fx:id="editAdjustmentButton" layoutX="255.0" layoutY="156.0" mnemonicParsing="false" onAction="#editAdjustmentOnMouseClicked" prefHeight="25.0" prefWidth="158.0" text="Edit adjustment " />
+      <TableView layoutX="89.0" layoutY="198.0" prefHeight="263.0" prefWidth="323.0">
+        <columns>
+          <TableColumn prefWidth="137.0" text="Inventory Item " />
+          <TableColumn prefWidth="95.0" text="Quantity" />
+            <TableColumn prefWidth="90.0" text="Status" />
+        </columns>
+      </TableView>
+      <Label layoutX="82.0" layoutY="113.0" text="Status" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="772.0" prefWidth="1067.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventory_manager.InventorymanagerdbController">
+   <right>
+      <AnchorPane prefHeight="772.0" prefWidth="511.0" style="-fx-background-color: purple;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="checkingStockLevelButton" layoutX="226.0" layoutY="137.0" mnemonicParsing="false" onAction="#checkingStockLevelOnMouseClicked" text="Checking Stock Level" />
+            <Button fx:id="orderRestockingButton" layoutX="225.0" layoutY="186.0" mnemonicParsing="false" onAction="#orderRestockingOnMouseClicked" text="Order Restocking" />
+            <Button fx:id="returnAndExchangeButton" layoutX="225.0" layoutY="235.0" mnemonicParsing="false" onAction="#returnAndExchangeOnMouseClicked" text="Return And Exchange" />
+            <Button fx:id="buyingProductButton" layoutX="230.0" layoutY="293.0" mnemonicParsing="false" onAction="#buyingProductOnMouseClicked" text="Buying Product" />
+            <Button fx:id="adjustInventoryButton" layoutX="227.0" layoutY="341.0" mnemonicParsing="false" onAction="#adjustInventoryOnMouseClicked" text="Adjust Inventory" />
+            <Button fx:id="preventingOverstockButton" layoutX="226.0" layoutY="396.0" mnemonicParsing="false" onAction="#preventingOverstockOnMouseClicked" text="preventing overstock" />
+            <Button fx:id="genarateReportButton" layoutX="225.0" layoutY="458.0" mnemonicParsing="false" onAction="#genarateReportOnMouseClicked" text="Genarate  Report" />
+            <Button fx:id="joinMeetingTF" layoutX="230.0" layoutY="521.0" mnemonicParsing="false" onAction="#joinMOnMouseClicked" text="Join Meeting" />
+         </children>
+      </AnchorPane>
+   </right>
+   <left>
+      <AnchorPane prefHeight="772.0" prefWidth="554.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="34.0" layoutY="140.0" text="Inventory Managment">
+               <font>
+                  <Font name="System Bold" size="45.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="265.0" fitWidth="261.0" layoutX="138.0" layoutY="311.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ivimage/360_F_482696367_xhiKllDpsTfAEDClK2TVFpIQmuvZRxIU.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
