@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="494.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkgHrHead.MeetingWithEmployeesController">
+   <children>
+      <Label fx:id="meetingdatelbl" layoutX="116.0" layoutY="82.0" text="Meeting Date:" />
+      <Label fx:id="meetingtimelbl" layoutX="116.0" layoutY="136.0" text="Meeting Time:" />
+      <Label fx:id="emplylbl" layoutX="129.0" layoutY="190.0" text="Employee:" />
+      <ComboBox fx:id="emplycb" layoutX="225.0" layoutY="185.0" prefWidth="150.0" />
+      <Button layoutX="163.0" layoutY="240.0" mnemonicParsing="false" onAction="#sendmeetingbuttononmouseclick" prefHeight="93.0" prefWidth="203.0" text="Send Meeting Call" />
+      <Label fx:id="meetinglbl" alignment="CENTER" layoutX="119.0" layoutY="32.0" prefHeight="31.0" prefWidth="256.0" text="Schedule Meeting" />
+      <ComboBox fx:id="meetingcb" layoutX="225.0" layoutY="77.0" prefHeight="31.0" prefWidth="150.0" />
+      <ComboBox fx:id="meetingtimecb" layoutX="225.0" layoutY="131.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
