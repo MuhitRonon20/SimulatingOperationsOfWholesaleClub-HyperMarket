@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: Lavender;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainproject.AdminMeetingScheduleFXMLController">
+   <children>
+      <Label fx:id="meetingScheduleLabel" layoutX="218.0" layoutY="36.0" prefHeight="17.0" prefWidth="239.0" text="Meeting Schedule" textFill="#b11d9d">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TableView fx:id="meetingScheduleTableView" layoutX="30.0" layoutY="100.0" prefHeight="200.0" prefWidth="543.0" style="-fx-background-color: plum;">
+        <columns>
+          <TableColumn fx:id="meetingIdTC" prefWidth="75.0" text="Meeting ID" />
+          <TableColumn fx:id="titleTC" prefWidth="108.33331298828125" text="Title" />
+            <TableColumn fx:id="organizerTC" prefWidth="90.6666259765625" text="Organizer" />
+            <TableColumn fx:id="locationTC" prefWidth="95.0" text="Location" />
+            <TableColumn fx:id="startDateTC" prefWidth="82.3333740234375" text="Start Date" />
+            <TableColumn fx:id="endDateTC" prefWidth="89.6666259765625" text="End Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="483.0" layoutY="342.0" mnemonicParsing="false" onAction="#backButtonOnClick" prefHeight="18.0" prefWidth="90.0" text="BACK" />
+   </children>
+</AnchorPane>

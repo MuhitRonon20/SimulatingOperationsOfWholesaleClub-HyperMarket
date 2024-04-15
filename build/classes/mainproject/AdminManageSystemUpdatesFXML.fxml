@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="609.0" prefWidth="549.0" style="-fx-background-color: lavender;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainproject.AdminManageSystemUpdatesFXMLController">
+   <children>
+      <Label fx:id="manageSystemUpdatesandUpgradesLabel" layoutX="99.0" layoutY="27.0" prefHeight="42.0" prefWidth="382.0" text="Manage System Updates and Upgrades" textFill="#9131ad">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="availableUpdatesLabel" layoutX="62.0" layoutY="89.0" prefHeight="17.0" prefWidth="147.0" text="Available Updates:" />
+      <TableView fx:id="updateTableView" layoutX="69.0" layoutY="126.0" prefHeight="200.0" prefWidth="363.0">
+        <columns>
+          <TableColumn fx:id="updateNameTC" prefWidth="140.33334350585938" text="Update Name" />
+          <TableColumn fx:id="versionTC" prefWidth="106.0" text="Version" />
+            <TableColumn fx:id="statusTC" prefWidth="115.0" text="Status" />
+        </columns>
+      </TableView>
+      <Button layoutX="371.0" layoutY="342.0" mnemonicParsing="false" onAction="#upgradeButtonOnClick" text="upgrade" />
+      <Label fx:id="systemUpdatesLogLabel" layoutX="62.0" layoutY="387.0" prefHeight="17.0" prefWidth="124.0" text="System Updates Log:" />
+      <TextArea fx:id="systemupdatesLogTextArea" layoutX="84.0" layoutY="427.0" prefHeight="91.0" prefWidth="382.0" />
+      <Button layoutX="440.0" layoutY="545.0" mnemonicParsing="false" onAction="#backButtonOnClick" text="BACK" />
+   </children>
+</AnchorPane>

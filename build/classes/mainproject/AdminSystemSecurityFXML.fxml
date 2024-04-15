@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="491.0" prefWidth="740.0" style="-fx-background-color: Lavender;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainproject.AdminSystemSecurityFXMLController">
+   <children>
+      <Label fx:id="systemSecurityManagementLabel" layoutX="202.0" layoutY="26.0" prefHeight="66.0" prefWidth="297.0" text="System Security Management">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#502067" />
+                  <Stop color="#e927bf" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="securitySettingLabel" layoutX="37.0" layoutY="108.0" prefHeight="17.0" prefWidth="179.0" text="Security Settings">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="securityLogsLabel" layoutX="362.0" layoutY="108.0" prefHeight="17.0" prefWidth="122.0" text="Security Logs">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="securitySettingsTableView" layoutX="27.0" layoutY="137.0" prefHeight="203.0" prefWidth="311.0">
+        <columns>
+          <TableColumn fx:id="idTC" prefWidth="49.33331298828125" text="ID" />
+          <TableColumn fx:id="nameTC" prefWidth="123.66668701171875" text="Name" />
+            <TableColumn fx:id="descriptionTC" prefWidth="137.66668701171875" text="Description" />
+        </columns>
+      </TableView>
+      <TableView fx:id="securityLogsTableView" layoutX="362.0" layoutY="139.0" prefHeight="200.0" prefWidth="353.0">
+        <columns>
+          <TableColumn fx:id="idTCo" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="userIdTCo" prefWidth="75.0" text="User ID" />
+            <TableColumn fx:id="eventTypeTCo" prefWidth="75.0" text="Event type " />
+            <TableColumn fx:id="affectedResourseTCo" prefWidth="127.0" text="Afftected Resource" />
+        </columns>
+      </TableView>
+      <Button layoutX="210.0" layoutY="353.0" mnemonicParsing="false" onAction="#editSecuritySettingsButtonOnClick" text="Edit Security Settings" />
+      <Button layoutX="613.0" layoutY="353.0" mnemonicParsing="false" onAction="#viewAllLogsButtonOnClick" text="View All Logs" />
+      <Button layoutX="663.0" layoutY="427.0" mnemonicParsing="false" onAction="#backButtonOnClick" text="BACK" />
+   </children>
+</AnchorPane>

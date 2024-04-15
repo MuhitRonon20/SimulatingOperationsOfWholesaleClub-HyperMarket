@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="585.0" prefWidth="647.0" style="-fx-background-color: lavender;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainproject.AdminMeetingManagmentFXMLController">
+   <children>
+      <Label fx:id="meetingManagementLabel" layoutX="207.0" layoutY="42.0" prefHeight="35.0" prefWidth="266.0" text="Meeting Management" textFill="#aa41c5">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="organizeMeetingLabel" layoutX="80.0" layoutY="113.0" prefHeight="17.0" prefWidth="146.0" text="Organize Meeting ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="titleLabel" layoutX="71.0" layoutY="151.0" prefHeight="17.0" prefWidth="60.0" text="Title:" />
+      <Label fx:id="organizerLabel" layoutX="71.0" layoutY="196.0" prefHeight="17.0" prefWidth="60.0" text="Organizer:" />
+      <TextField fx:id="titleTextField" layoutX="101.0" layoutY="151.0" />
+      <TextField fx:id="organizerTextField" layoutX="140.0" layoutY="192.0" />
+      <Label fx:id="attendeesLabel" layoutX="71.0" layoutY="242.0" text="Attendees:" />
+      <TextArea fx:id="enterAttendeesTextArea" layoutX="140.0" layoutY="232.0" prefHeight="53.0" prefWidth="200.0" promptText="Enter attendees" />
+      <Label fx:id="startDateLabel" layoutX="396.0" layoutY="155.0" text="Start date:" />
+      <Label fx:id="endDateLabel" layoutX="396.0" layoutY="209.0" text="End date:" />
+      <DatePicker fx:id="startDatePicker" layoutX="457.0" layoutY="151.0" onAction="#startDatePickerOnClick" prefHeight="25.0" prefWidth="139.0" promptText="DD/MM/YYYY" />
+      <DatePicker fx:id="endDatePicker" layoutX="451.0" layoutY="205.0" onAction="#endDatePickerOnClick" prefHeight="25.0" prefWidth="146.0" promptText="DD/MM/YYYY" />
+      <Button layoutX="395.0" layoutY="292.0" mnemonicParsing="false" onAction="#organizerButtonOnClick" prefHeight="25.0" prefWidth="168.0" text="Organize" />
+      <Label fx:id="deliverMeetingLabel" layoutX="78.0" layoutY="347.0" prefHeight="17.0" prefWidth="125.0" text="Deliver Meeting">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="meetingIdLabel" layoutX="71.0" layoutY="397.0" text="Meeting ID:" />
+      <Label fx:id="locationLabel" layoutX="71.0" layoutY="434.0" text="Location:" />
+      <TextField fx:id="MeetingIdTextField" layoutX="166.0" layoutY="393.0" />
+      <TextField fx:id="locationTextField" layoutX="166.0" layoutY="430.0" />
+      <Button layoutX="405.0" layoutY="484.0" mnemonicParsing="false" onAction="#deliverButtonOnClick" prefHeight="25.0" prefWidth="168.0" text="Deliver" />
+      <Button layoutX="570.0" layoutY="534.0" mnemonicParsing="false" onAction="#backButtonOnClick" text="BACK" />
+   </children>
+</AnchorPane>
