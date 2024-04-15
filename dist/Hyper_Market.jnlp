@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="Hyper_Market.jar" size="7751848" download="eager" />
+    <jar href="Hyper_Market.jar" size="7758988" download="eager" />
   </resources>
   <jfx:javafx-desc  width="800" height="600" main-class="hyper_market.Hyper_Market"  name="Hyper_Market" />
   <update check="always"/>
