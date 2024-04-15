@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="451.0" prefWidth="617.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hyper_market.ReturnsAndExchangesController">
+   <children>
+      <ComboBox fx:id="actionCB" layoutX="139.0" layoutY="24.0" onAction="#actionOnMouseClicked" prefWidth="150.0" />
+      <Label layoutX="63.0" layoutY="28.0" text="Action" />
+      <TextField fx:id="orderTf" layoutX="140.0" layoutY="69.0" />
+      <Label layoutX="63.0" layoutY="73.0" text="Order id" />
+      <ComboBox fx:id="productCB" layoutX="139.0" layoutY="125.0" onAction="#productOnMouseClicked" prefWidth="150.0" />
+      <Label layoutX="59.0" layoutY="129.0" text="Product " />
+      <TextArea fx:id="reasonTA" layoutX="139.0" layoutY="174.0" prefHeight="200.0" prefWidth="414.0" />
+      <Label layoutX="62.0" layoutY="183.0" text="Reason" />
+      <Button fx:id="submitButton" layoutX="378.0" layoutY="402.0" mnemonicParsing="false" onAction="#submitOnMouseClicked" text="Submit" />
+      <Button fx:id="cancelButton" layoutX="469.0" layoutY="402.0" mnemonicParsing="false" onAction="#cancelOnMouseClicked" text="Cancel" />
+   </children>
+</AnchorPane>
