@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane id="AnchorPane" prefHeight="644.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkgTreasurer.DebtManagementController">
+   <children>
+      <Label fx:id="currentdebt" alignment="CENTER" layoutX="205.0" layoutY="177.0" prefHeight="47.0" prefWidth="187.0" text="Current Debt Summary" textAlignment="CENTER" />
+      <TableView fx:id="debtsTable" layoutX="18.0" layoutY="228.0" prefHeight="200.0" prefWidth="545.0">
+         <columns>
+            <TableColumn fx:id="tvloanname" prefWidth="94.0" text="Loan Name" />
+            <TableColumn fx:id="tvprincipleacc" prefWidth="135.0" text=" Principal Amount" />
+            <TableColumn fx:id="tvdpaidamount" minWidth="4.0" prefWidth="106.0" text=" Paid Amount" />
+            <TableColumn fx:id="tvduedate" prefWidth="90.0" text="Due Date" />
+            <TableColumn fx:id="tvdebtamount" prefWidth="119.0" text="Debt Amount" />
+         </columns>
+      </TableView>
+      <Label fx:id="loanname" layoutX="18.0" layoutY="20.0" text="Loan Name" wrapText="true" />
+      <Label fx:id="principleacc" layoutX="18.0" layoutY="64.0" text="Principal Amount" wrapText="true" />
+      <Label fx:id="paidamount" layoutX="19.0" layoutY="103.0" text="Paid Amount" />
+      <Label fx:id="debtamount" layoutX="18.0" layoutY="145.0" text="Debt Amount" />
+      <Label fx:id="debtamountlbl" layoutX="150.0" layoutY="140.0" prefHeight="31.0" prefWidth="119.0" style="-fx-background-color: red;" />
+      <TextField fx:id="principleacctf" layoutX="150.0" layoutY="59.0" />
+      <TextField fx:id="paidamounttf" layoutX="150.0" layoutY="98.0" />
+      <Label fx:id="loannametf" layoutX="150.0" layoutY="15.0" prefHeight="31.0" prefWidth="187.0" style="-fx-background-color: skyblue;" />
+      <Line endX="448.0" layoutX="120.0" layoutY="443.0" startX="-100.0" />
+      <Label fx:id="debtacc" layoutX="20.0" layoutY="455.0" text="Debt account" />
+      <ComboBox fx:id="debtacc" layoutX="118.0" layoutY="450.0" prefWidth="150.0" />
+      <Label fx:id="schedule" layoutX="20.0" layoutY="498.0" text="Schedule" wrapText="true" />
+      <Label fx:id="amount" layoutX="26.0" layoutY="538.0" text="Amount" />
+      <TextField fx:id="amounttf" layoutX="118.0" layoutY="533.0" />
+      <Button layoutX="118.0" layoutY="574.0" mnemonicParsing="false" onAction="#confirmbuttononmouseclick" prefHeight="47.0" prefWidth="187.0" text="Confirm Schedule" />
+      <ComboBox fx:id="schedulecb" layoutX="118.0" layoutY="493.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

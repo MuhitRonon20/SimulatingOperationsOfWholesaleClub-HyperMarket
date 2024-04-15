@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane id="AnchorPane" prefHeight="494.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkgHrHead.RecruitmentSelectController">
+   <children>
+      <Button layoutX="72.0" layoutY="93.0" mnemonicParsing="false" onAction="#shortlistbuttononmouseclick" text="Shortlist" />
+      <TableView fx:id="applicanttv" layoutX="89.0" layoutY="219.0" prefHeight="200.0" prefWidth="148.0">
+         <columns>
+            <TableColumn fx:id="tvclmname" prefWidth="75.0" text="Name " />
+            <TableColumn fx:id="tvclmstattus" prefWidth="75.0" text="Status" />
+         </columns>
+      </TableView>
+      <Label fx:id="applicantlistlbl" alignment="CENTER" layoutX="101.0" layoutY="150.0" prefHeight="47.0" prefWidth="125.0" text="Applicant list" wrapText="true" />
+      <Button layoutX="189.0" layoutY="93.0" mnemonicParsing="false" onAction="#rejectbuttononmouseclick" prefHeight="31.0" prefWidth="75.0" text="Reject" wrapText="true" />
+      <Label fx:id="applicantnamelbl" layoutX="56.0" layoutY="50.0" text="Applicant Name" />
+      <TextField fx:id="applicantnametf" layoutX="186.0" layoutY="45.0" prefHeight="31.0" prefWidth="107.0" style="-fx-background-color: skyblue;" />
+      <Line endY="386.0" layoutX="326.0" layoutY="45.0" />
+      <TableView fx:id="tvshortlist" layoutX="370.0" layoutY="219.0" prefHeight="200.0" prefWidth="148.0">
+         <columns>
+            <TableColumn fx:id="tvstatus" prefWidth="75.0" text="Status" />
+            <TableColumn fx:id="tvname" prefWidth="75.0" text="Name " />
+         </columns>
+      </TableView>
+      <Label fx:id="shortlistlbl" layoutX="376.0" layoutY="174.0" text="Shortlisted applicants" />
+      <Button layoutX="364.0" layoutY="124.0" mnemonicParsing="false" onAction="#selectedbuttononmouseclick" text="Selected" />
+      <Button layoutX="458.0" layoutY="124.0" mnemonicParsing="false" onAction="#rejectforshortlistbuttonOnmouseclick" prefHeight="31.0" prefWidth="76.0" text="Reject" wrapText="true" />
+      <ComboBox fx:id="shortlistcb" layoutX="369.0" layoutY="77.0" prefWidth="150.0" />
+      <Label fx:id="shortapplicantlistlbl" layoutX="365.0" layoutY="50.0" text="Shortlisted Applicant Name " />
+      <Line endX="-24.0" endY="373.0" layoutX="596.0" layoutY="61.0" startX="-17.0" />
+      <Label fx:id="slelecttedapplicantlbl" layoutX="606.0" layoutY="50.0" text="Selected applicant " />
+      <ComboBox fx:id="slctapplicentcb" layoutX="599.0" layoutY="78.0" prefWidth="150.0" />
+      <TextArea fx:id="msgtf" layoutX="607.0" layoutY="181.0" prefHeight="125.0" prefWidth="148.0" style="-fx-background-color: royalblue;" />
+      <Button layoutX="641.0" layoutY="330.0" mnemonicParsing="false" onAction="#sendbuttononmouseclick" prefHeight="47.0" prefWidth="76.0" text="Send" />
+      <Label fx:id="msglbl" alignment="CENTER" layoutX="607.0" layoutY="129.0" prefHeight="47.0" prefWidth="143.0" text="Message for  selected applicant" textAlignment="CENTER" wrapText="true" />
+   </children>
+</AnchorPane>
