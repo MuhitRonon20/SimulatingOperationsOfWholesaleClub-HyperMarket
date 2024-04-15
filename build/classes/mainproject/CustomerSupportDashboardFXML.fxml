@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="574.0" prefWidth="700.0" style="-fx-background-color: lightgrey;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainproject.CustomerSupportDashboardFXMLController">
+   <children>
+      <Label fx:id="customerSupportDashboardLabel" layoutX="182.0" layoutY="24.0" prefHeight="60.0" prefWidth="453.0" text="Customer Support Dashboard">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.43492063340686615" startX="0.19047619728814985" startY="0.44444445655459447">
+               <stops>
+                  <Stop color="#3c3260" />
+                  <Stop color="#0ec0f2" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button layoutX="182.0" layoutY="123.0" mnemonicParsing="false" onAction="#answerQuriesButtonOnClick" prefHeight="36.0" prefWidth="336.0" text="Answer Queries" />
+      <Button layoutX="182.0" layoutY="168.0" mnemonicParsing="false" onAction="#resolveComplaintsButtonOnClick" prefHeight="36.0" prefWidth="336.0" text="Resolve Complaints" />
+      <Button layoutX="182.0" layoutY="220.0" mnemonicParsing="false" onAction="#giveFeedBackButtonOnClick" prefHeight="36.0" prefWidth="336.0" text="Give Feedback" />
+      <Button layoutX="182.0" layoutY="265.0" mnemonicParsing="false" onAction="#productInformationButtonOnClick" prefHeight="44.0" prefWidth="336.0" text="Product Information" />
+      <Button layoutX="182.0" layoutY="326.0" mnemonicParsing="false" onAction="#processReturnButtonOnClick" prefHeight="44.0" prefWidth="336.0" text="Process Returns" />
+      <Button layoutX="182.0" layoutY="384.0" mnemonicParsing="false" onAction="#checkMeetingScheduleButtonOnClick" prefHeight="44.0" prefWidth="336.0" text="Check Meeting Schedule" />
+      <Button layoutX="182.0" layoutY="440.0" mnemonicParsing="false" onAction="#collaborateDepartmentsButtonOnClick" prefHeight="44.0" prefWidth="336.0" text="Collaborate with Departments" />
+   </children>
+</AnchorPane>
